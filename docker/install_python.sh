@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # INSTALL PYTHON 2.7.9
 cd /tmp
 wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
