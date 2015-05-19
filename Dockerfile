@@ -10,7 +10,7 @@ RUN DEBIAN_FRONTEND='noninteractive' \
 
 RUN apt-get install libmysqlclient-dev
 
-RUN apt-get clean
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install latest python 2.7.9
 ADD ./docker/install_python.sh /install_python.sh
